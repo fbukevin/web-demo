@@ -14,7 +14,7 @@ $ git clone https://github.com/qyjohn/web-demo
 
 Then we create a MySQL database and a MySQL user for our demo. Here we use "web_demo" as the database name, and "username" as the MySQL user.
 
-```shell
+```sql
 $ mysql -u root -p
 mysql> CREATE DATABASE web_demo;
 mysql> CREATE USER 'username'@'localhost' IDENTIFIED BY 'password';
@@ -25,7 +25,7 @@ mysql> quit
 In the code you clone from Github, we have prepopulated some demo data as examples. We use the following command to import the demo data in web_demo.sql to the web_demo database:
 
 ```shell
-$cd /var/www/html/web-demo
+$ cd /var/www/html/web-demo
 $ mysql -u username -p web_demo < web_demo.sql
 ```
 
